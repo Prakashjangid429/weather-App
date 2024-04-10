@@ -31,9 +31,7 @@ async function weatherData(city){
 
     let pressure = document.getElementById('pressure'); 
     pressure.innerHTML = `${data.main.pressure}<small>mbar</small>`;  
-    console.log(data.main);
-    
-    
+    // console.log(data.main);
 }
 search.addEventListener('click',function(){
     let Sinput = document.getElementById('search-input').value;

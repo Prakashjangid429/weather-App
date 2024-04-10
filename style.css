@@ -10,13 +10,15 @@ body{
     align-items: center;
     min-height: 100vh;
     background: sandybrown;
-    background-image: url(asset/fernando-mate-iIe3p4_AZs8-unsplash.jpg);
+    background-image: url(asset/2151065766.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .container{
     position: relative;
     width: 440px;
     max-width: 100%;
-    height: 600px;
+    height: 700px;
     max-height: 90vh;
   
     background: rgba(64, 57, 166, 0.269);
