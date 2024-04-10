@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="imglayer">
+            <img src="asset/2150644606.jpg" alt="">
+        </div>
+       
+        <div class="search-box">
+            <input id="search-input" type="text" placeholder="Enter your location">
+            <button id="search-btn" class="">Search</button>
+        </div>
+        <h3 id="city">Jaipur</h3>
+        
+        <div class="weather-box">
+            <div class="box">
+                <div class="info-weather">
+                    <div class="weather">
+                        <img src="asset/pngimg.com - cloud_PNG24.png" alt="">
+                        <p class="temp">16<span>&deg;C</span></p>
+                        <b class="des">Broken Clouds</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="weather-lbx">
+            <div class="weather-details">
+                <div class="detail-card">
+                    <span>Day</span>
+                    <span id="day"></span>
+                </div>
+                <div class="detail-card">
+                    <span>Wind speed</span>
+                    <span id="wind">20km/h</span>
+                </div>
+                <div class="detail-card">
+                    <span>AQI</span>
+                    <span id="AQI">100</span>
+                </div>
+    
+            </div>
+            <div class="weather-details">
+                <div class="detail-card">
+                    <span>humidity</span>
+                    <span id="humidity">80%</span>
+                </div>
+                <div class="detail-card">
+                    <span>Real feel</span>
+                    <span id="real">38c</span>
+                </div>
+                <div class="detail-card">
+                    <span>UV</span>
+                    <span id="uv">1</span>
+                </div>
+                <div class="detail-card">
+                    <span>Pressure</span>
+                    <span id="pressure">1012<small>mbar</small></span>
+                </div>
+                <div class="detail-card">
+                    <span>Chance of rain</span>
+                    <span id="rain">10%</span>
+                </div>
+            </div>
+        </div>
+       
+        
+    
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
