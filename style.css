@@ -51,8 +51,9 @@ body{
     height: 50px;
     display: flex;
     align-items: center;
+    justify-content: center;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 20px;
 
 
 }
@@ -64,7 +65,7 @@ body{
     border: 1px solid rgba(255, 255, 255, 0.647);
     outline: none;
     font-size: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     color: white;
     font-weight: 500;
     padding: 0 90px 0 15px;
@@ -72,6 +73,7 @@ body{
 }
 .search-box input::placeholder{
     color: aqua;
+    background-color: transparent;
 }
 .search-box button{
     position: absolute;
@@ -122,21 +124,21 @@ body{
 }
 .weather-lbx{
     display: flex;
-    color: rgb(217, 211, 211);
+    color: rgb(241, 238, 238);
     align-items: center;
     justify-content: space-between;
     /* text-transform: capitalize; */
     height:43%;
 }
 .weather-details{
-    /* border: 1px solid white; */
+    border: 0.3px solid rgba(255, 255, 255, 0.671);
     padding:20px 8px;
     height: 100%;
-    width: 49.5%;
-    font-weight: 700;
-    border-radius: 15px;
-    background: rgba(0, 0, 0, 0.119);
-    backdrop-filter: blur(10px);
+    width: 49.7%;
+    font-weight: 500;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.173);
+    backdrop-filter: blur(7px);
     
 }
 .detail-card{
@@ -148,6 +150,15 @@ body{
 }
 .detail-card:nth-child(1){
     text-transform: capitalize;
+}
+@media (max-width:450px){
+    .search-box{
+        margin-top: 15px;
+        
+    }
+    .container{
+        padding: 5px;
+    }
 }
 
 

@@ -11,6 +11,10 @@ async function weatherData(city){
     const response = await fetch(Url);
     let data = await response.json();
 
+if(data.cod != 200){
+    let loction = document.getElementById('city');
+    loction.innerText = data.message;
+}else{
     let loction = document.getElementById('city');
     loction.innerText = data.name + ","+ data.sys.country;
 
@@ -31,7 +35,6 @@ async function weatherData(city){
 
     let pressure = document.getElementById('pressure'); 
     pressure.innerHTML = `${data.main.pressure}<small>mbar</small>`;  
-    // console.log(data);
 
     let img = document.getElementById('bgimage');
     if(data.weather[0].main == 'Haze'){
@@ -45,11 +48,13 @@ async function weatherData(city){
     }else{
         img.src = 'asset/clear.png'; 
     };
-}
+
+};
+
+};
 search.addEventListener('click',function(){
     let Sinput = document.getElementById('search-input').value;
     weatherData(Sinput);
-
 });
 
 
