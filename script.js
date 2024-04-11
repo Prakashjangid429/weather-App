@@ -45,6 +45,9 @@ if(data.cod != 200){
     
     else if(data.weather[0].main == 'Rain'){
         img.src = 'asset/rain.jpg'; 
+    }
+    else if(data.weather[0].main == 'Dust'){
+        img.src = 'asset/dust.jpg'; 
     }else{
         img.src = 'asset/clear.png'; 
     };
