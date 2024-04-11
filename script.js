@@ -12,7 +12,7 @@ async function weatherData(city){
     let data = await response.json();
 
     let loction = document.getElementById('city');
-    loction.innerText = data.name;
+    loction.innerText = data.name + ","+ data.sys.country;
 
     let temp = document.querySelector('.weather .temp');
     temp.innerHTML = `${Math.round(data.main.temp)}&deg;C`;
@@ -31,7 +31,22 @@ async function weatherData(city){
 
     let pressure = document.getElementById('pressure'); 
     pressure.innerHTML = `${data.main.pressure}<small>mbar</small>`;  
-    // console.log(data.main);
+    console.log(data);
+
+    let img = document.getElementById('bgimage');
+    if(data.weather[0].main == 'Haze'){
+        img.src = 'asset/haz.jpg'; 
+    }else if(data.weather[0].main == 'Clouds'){
+        img.src = 'asset/clouds.jpg'; 
+    }
+    // else if(data.weather[0].main == 'Clear'){
+    //     img.src = 'asset/clear.png'; 
+    // }
+    else if(data.weather[0].main == 'Rain'){
+        img.src = 'asset/rain.jpg'; 
+    }else{
+        img.src = 'asset/clear.png'; 
+    }
 }
 search.addEventListener('click',function(){
     let Sinput = document.getElementById('search-input').value;

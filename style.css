@@ -21,7 +21,7 @@ body{
     height: 700px;
     max-height: 90vh;
   
-    background: rgba(64, 57, 166, 0.269);
+    background: rgba(64, 57, 166, 0.746);
     border-radius: 15px;
     padding: 20px;
     backdrop-filter: blur(10px);
@@ -86,7 +86,7 @@ body{
 #city{
     text-align: center;
     color: white;
-    margin-top: 20px;
+    margin-top: 40px;
     font-size: 2.4rem;
     text-transform: capitalize;
 }
@@ -97,7 +97,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 35%;
+    height: 32%;
 
 }
 .weather img{
@@ -128,11 +128,12 @@ body{
 }
 .weather-details{
     /* border: 1px solid white; */
-    padding:20px 14px;
+    padding:20px 8px;
     height: 100%;
-    width: 49%;
+    width: 49.5%;
+    font-weight: 700;
     border-radius: 15px;
-    background: rgba(0, 0, 0, 0.029);
+    background: rgba(0, 0, 0, 0.119);
     backdrop-filter: blur(10px);
     
 }
