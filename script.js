@@ -31,7 +31,7 @@ async function weatherData(city){
 
     let pressure = document.getElementById('pressure'); 
     pressure.innerHTML = `${data.main.pressure}<small>mbar</small>`;  
-    console.log(data);
+    // console.log(data);
 
     let img = document.getElementById('bgimage');
     if(data.weather[0].main == 'Haze'){
@@ -39,14 +39,12 @@ async function weatherData(city){
     }else if(data.weather[0].main == 'Clouds'){
         img.src = 'asset/clouds.jpg'; 
     }
-    // else if(data.weather[0].main == 'Clear'){
-    //     img.src = 'asset/clear.png'; 
-    // }
+    
     else if(data.weather[0].main == 'Rain'){
         img.src = 'asset/rain.jpg'; 
     }else{
         img.src = 'asset/clear.png'; 
-    }
+    };
 }
 search.addEventListener('click',function(){
     let Sinput = document.getElementById('search-input').value;
